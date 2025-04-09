@@ -1,33 +1,76 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { About } from "./components/About"
+import { Footer } from "./components/Footer"
+import { Header } from "./components/Header"
+import { Projects } from "./components/Projects"
+import { SocialNetworks } from "./components/SocialNetworks"
+import { useState, useEffect, useRef } from "react"
+import { ingles, español } from "./components/object"
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  
+  const [query, setQuery] = useState("")
+  const [visible, setVisible] = useState(false)
+  const [language, setLanguage] = useState("español")
+
+  const content = language === "español" ? español : ingles
+
+  const [phrase, setPhrase] = useState("")
+
+  useEffect(() => {
+
+    const changePhrase = () => {
+      const randomIndex = Math.floor(Math.random() * content.phrases.length)
+      setPhrase(content.phrases[randomIndex])
+    }
+
+    changePhrase()
+    const interval = setInterval(changePhrase, 5000)
+    return () => clearInterval(interval);
+  
+  }, [content])
+
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    if (visible && inputRef.current){
+      inputRef.current.focus()
+    }
+  }, [visible])
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Header phrase={phrase}
+        content={content}
+        setLanguage={setLanguage}
+        language={language}
+        query={query}
+        setQuery={setQuery}
+        visible={visible}
+        setVisible={setVisible}
+        inputRef={inputRef}/>
+    <h1 className="text-3xl text-white text-center font-bold pb-10 pt-70 sm:pt-70" style={{ fontFamily: "Noto Sans, sans-serif" }}>{content.projects}</h1>
+    <div className="flex justify-center items-center">
+      <Projects content={content} query={query} >
+      </Projects>
+    </div>
+    <div className="flex flex-col md:pt-20 pt-10 sm:flex-row-reverse">
+      <div className="w-full p-5 lg:pl-20 xl:pl-50 2xl:pl-100">
+          <About content={content}>
+          </About>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="relative top-[-130px] custom-top md:top-[-285px] lg:top-[50px] xl:top-[20px] 2xl:top-[-100px] md:pt-0 md:pl-10 lg:pl-20 xl:pl-20 2xl:pl-40 xl:w-1/2 w-3/4 flex justify-center items-center min-h-screen mx-auto">
+        <img src="public/software.webp" className="object-cover clip-triangle" alt="software"></img>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
+    <div className="w-full pt-5 pb-11 pl-7 flex flex-cols gap-4 items-center ">
+      <SocialNetworks>
+      </SocialNetworks>
+    </div>
+    <Footer></Footer>
     </>
   )
 }
