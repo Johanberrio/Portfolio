@@ -63,7 +63,7 @@ function App() {
           </About>
       </div>
       <div className="relative top-[-130px] custom-top md:top-[-285px] lg:top-[50px] xl:top-[20px] 2xl:top-[-100px] md:pt-0 md:pl-10 lg:pl-20 xl:pl-20 2xl:pl-40 xl:w-1/2 w-3/4 flex justify-center items-center min-h-screen mx-auto">
-        <img src="public/software.webp" className="object-cover clip-triangle" alt="software"></img>
+        <img src="/Portfolio/software.webp" className="object-cover clip-triangle" alt="software"></img>
       </div>
     </div>
     <div className="w-full pt-5 pb-11 pl-7 flex flex-cols gap-4 items-center ">

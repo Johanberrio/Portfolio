@@ -13,7 +13,7 @@ export function Header({phrase, content, language, setLanguage, query, setQuery,
         
         <header className="bg-[#292a2a] flex flex-col sm:flex-row text-white justify-center sm:justify-between fixed top-0 w-full z-9999">
             <div className="flex items-center -pt-2 -ml-11 mt-3">
-                <img src="public/Logo.png" className="w-50 h-50 -mr-15 relative top-[-60px]"></img>
+                <img src="/Portfolio/Logo.png" className="w-50 h-50 -mr-15 relative top-[-60px]"></img>
                 <h3 className="font-bold leading-tight relative top-[-60px]" style={{ fontFamily: "Noto Sans, sans-serif" }}>{content.portfolio}</h3>    
             </div>
             <div className="flex gap-x-3 absolute pl-4 pt-45 lg:text-xl text-xs " style={{ fontFamily: "Noto Sans, sans-serif" }}>

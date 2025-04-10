@@ -1,4 +1,4 @@
-
+@import "tailwindcss";
 
 
 .material-card {
@@ -30,7 +30,7 @@
 }
 
 body {
-  background: url("public/wave-haikei.svg") no-repeat center center;
+  background: url("/Portfolio/wave-haikei.svg") no-repeat center center;
   background-size: cover;
 }
 
