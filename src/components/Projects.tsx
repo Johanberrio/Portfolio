@@ -6,7 +6,7 @@ export function Projects({content, query}: {content: any, query : string}){
             title: content.card_1_title,
             description: content.card_1,
             image: "/Portfolio/tablet.png",
-            link: "https://www.google.com",
+            link: "https://play.google.com/store/apps/details?id=com.johandev.currencyconverter",
             tags: "Kotlin / Android Studio",
         },
         {
@@ -23,6 +23,13 @@ export function Projects({content, query}: {content: any, query : string}){
             link: "https://phenomenal-gecko-107185.netlify.app/",
             tags: "React / TypeScript / HTML / CSS",
         },
+        {
+            title: content.card_4_title,
+            description: content.card_4,
+            image: '/Portfolio/lentespro.png',
+            link: "https://www.google.com",
+            tags: "Kotlin / Android Studio",
+        }
     ];
 
     const filteredCards = cards.filter(card =>

@@ -4,12 +4,14 @@ export const ingles = {
     card_1: "This is my first Kotlin project and the first project to be published on the Google Play Store. It's a currency converter for over 160 countries with a simple yet visually pleasing interface.",
     card_2: "This project was carried out jointly with my colleagues at Taurus. I created the back-end for several modules such as settings, testing, admin, and scheduling, and also collaborated on some front-end work. Currently, the development of this Intranet is on hold, but what has been achieved so far allows for very comprehensive management for a startup.",
     card_3: "This is my first project using TypeScript. It's a simple shopping cart web application that allows you to add, modify, or delete items within your cart.",
+    card_4: "I developed this app for an online sales business I run with my partner. It was developed with the help of Gemini AI. It's currently on version 3, and I hope to continue updating it with new features in the future.",
     card_1_title: "Currency Converter",
     card_3_title: "Shopping Cart",
+    card_4_title: "LentesPro",
     projects: "PROJECTS",
     about_title: "ABOUT ME",
-    about: `Hello, my name is Johan Berrio and I am a <strong>full-stack </strong>software developer with over four years of experience.
-            During this time, I have learned and worked with various programming languages, such as <strong>Python, Java, JavaScript, Go, HTML, CSS, and Kotlin</strong>, as well as their respective frameworks.
+    about: `Hello, my name is Johan Berrio and I am a <strong>full-stack </strong>software developer with over five years of experience.
+            During this time, I have learned and worked with various programming languages, such as <strong>Python, Java, JavaScript, Go, HTML, CSS, Ruby and Kotlin</strong>, as well as their respective frameworks.
             <br></br>
             I also have experience using different development environments (IDEs) such as <strong>Visual Studio Code, Eclipse, Android Studio, PyCharm, Goland</strong>, and tools such as GitHub, GitLab, Jenkins, and Docker. Regarding databases, I have worked extensively with engines such as <strong>SQL Server, MySQL, PostgreSQL, MongoDB, and SQLite</strong>.
             <br></br>
@@ -35,12 +37,14 @@ export const español = {
     card_1: "Este es mi primer proyecto en Kotlin y primer proyecto a publicar en Google Play Store. Es un Conversor de moneda o divisa de más de 160 países con una interfaz sencilla pero agradable a la vista.",
     card_2: "Este proyecto fue realizado en conjunto con mis compañeros de trabajo en Taurus. Yo realicé la parte del back-end para varios módulos como settings, test, admin, schedule; y algunas colaboraciones en el front-end. Actualmente, el desarrollo de esta Intranet está en espera, pero lo que se logró hasta ahora permite tener una gestión muy completa para una startup.",
     card_3: "Este es mi primer proyecto usando TypeScript. Es un sencillo aplicativo web de un carro de compras que permite agregar, modificar o eliminar elementos dentro del carrito.",
+    card_4: "Desarrollé esta app para un negocio de ventas online que tengo con mi pareja. Fué desarrollada con la ayuda de Gemini AI. Actualmente está en la versión 3, y espero seguir actualizándola con nuevas funciones en el futuro.",
     card_1_title: "Conversor de Moneda",
     card_3_title: "Carrito de compras",
+    card_4_title: "LentesPro",
     projects: "PROYECTOS",
     about_title: "ACERCA DE MI",
-    about: `Hola, mi nombre es Johan Berrio y soy desarrollador de software <strong>full stack</strong> con más de cuatro años de experiencia. 
-                Durante este tiempo, he aprendido y trabajado con diversos lenguajes de programación, como <strong>Python, Java, JavaScript, Go, HTML, CSS y Kotlin</strong>, 
+    about: `Hola, mi nombre es Johan Berrio y soy desarrollador de software <strong>full stack</strong> con más de cinco años de experiencia. 
+                Durante este tiempo, he aprendido y trabajado con diversos lenguajes de programación, como <strong>Python, Java, JavaScript, Go, HTML, CSS, Ruby y Kotlin</strong>, 
                 así como con sus respectivos frameworks.
                 <br></br>
                 También tengo experiencia utilizando diferentes entornos de desarrollo (IDEs) como <strong>Visual Studio Code, Eclipse, Android Studio, PyCharm, Goland</strong>; y herramientas como , 
